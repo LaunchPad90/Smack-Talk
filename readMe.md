@@ -10,16 +10,16 @@ Wireframe and flow:
 <img src="https://imgur.com/Cpv4k8D">
 
 Here's a quick look into what I am currently looking to accomplish:
-<a href="https://trello.com/b/KeGymZbs/project-2">
+<a href="https://trello.com/b/KeGymZbs/project-2">Trello<br>
 
 Landing Page:
-[Imgur](https://i.imgur.com/rJwymI6.jpg?1)
+<a href="https://i.imgur.com/rJwymI6.jpg?1>
 
 User Home:
-[Imgur](https://i.imgur.com/V9XYc0Z.png?1)
+<a href="https://i.imgur.com/V9XYc0Z.png?1>
 
 Add New Recipe:
-[Imgur](https://i.imgur.com/y9ve8MK.jpg?1)
+<a href="https://i.imgur.com/y9ve8MK.jpg?1>
 
 Edit Recipe:
-[Imgur](https://i.imgur.com/4M0eybc.jpg?1)
+<a href="https://i.imgur.com/4M0eybc.jpg?1>
