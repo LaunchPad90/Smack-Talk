@@ -6,8 +6,8 @@
 Technologies used:
 HTML, CSS, Javascript, Express, node.js, Mongoose, MongoDB
 
-Wireframe and flow:
-<img src="https://imgur.com/Cpv4k8D">
+<a href="https://imgur.com/Cpv4k8D"><img src="https://i.imgur.com/Cpv4k8D.png" title="source: imgur.com" />Wireframe and flow:</a>
+
 
 Here's a quick look into what I am currently looking to accomplish:
 <a href="https://trello.com/b/KeGymZbs/project-2"></a>Trello<br>
