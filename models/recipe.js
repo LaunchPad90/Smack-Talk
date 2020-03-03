@@ -7,14 +7,8 @@ const recipeSchema = new Schema({
     servings: Number,
     prepTime: [Number, ['minutes', 'hours']],
     cookTime: [Number, ['minutes', 'hours']],
-    ingredients: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Ingredient'
-    }],
-    directions: [{
-        type: Schema.Types.ObjectId,
-        ref: 'Direction'
-    }]
+    ingredients: String,
+    directions: String
 })
 
 

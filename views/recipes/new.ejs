@@ -1,10 +1,14 @@
 <%- include ../partials/header %>
 <form action="/recipes" method="POST">
+
   <div id="recipe-container">
     <div id="left">
       <label>Course:<br>
         <select name="course">
           <option value="Breakfast">Breakfast</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner">Dinner</option>
+          <option value="Snack">Snack</option>
         </select>
       </label>
       <label>Title:<br>

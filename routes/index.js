@@ -12,8 +12,8 @@ router.get('/auth/google', passport.authenticate('google', {
 }));
 
 router.get('/oauth2callback', passport.authenticate('google', {
-  successRedirect: '/recipes',
-  failureRedirect: '/recipes'
+  successRedirect: '/recipes/all',
+  failureRedirect: '/recipes/all'
 }));
 
 router.get('/logout', function(req, res) {
