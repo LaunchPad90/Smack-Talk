@@ -1,32 +1,41 @@
 <%- include ../partials/header %>
-
-  <form action="/recipes" method="POST">
-    <label>Title:
-      <input type="text" name="title">
-    </label><br>
-    <label>Course: 
-      <select name="course">
-        <option value="Breakfast">Breakfast</option>
-        <option value="Lunch">Lunch</option>
-        <option value="Dinner">Dinner</option>
-        <option value="Snack">Snack</option>
-      </select>
-    </label><br>
-    <label>Servings:
+<form action="/users" method="POST">
+  <div id="recipe-container">
+    <div id="left">
+      <label>Course:<br>
+        <select name="course">
+          <option value="Breakfast">Breakfast</option>
+        </select>
+      </label>
+      <label>Title:<br>
+        <input type="text" name="title">
+      </label>
+      <label>Servings:<br>
         <input type="text" name="servings">
-    </label><br>
-    <label>Prep Time:
+      </label>
+      <label>Prep Time:<br>
         <input type="text" name="prepTime">
-    </label><br>
-    <label>Cook Time:
+      </label>
+      <label>Cook Time:<br>
         <input type="text" name="cookTime">
-    </label><br>
-    </form>
-    <div id="instruction-field">Ingredients:
-        <input type="text" name="ingredients">
-    </div><br>
-    <div id="direction-field">Directions:
-      <input type="text" name="directions">
-    </div><br>
+      </label>
+    </div>
+
+    <div id="middle">
+      <div>
+        <label>Directions:
+          <textarea name="directions" id="directions-area" cols="30" rows="12" placeholder="ex: 1. Bring water to a boil"></textarea>
+        </label>
+      </div>
+    </div>
+
+    <div id="right">
+      <label>Ingredients:
+        <textarea name="ingredients" id="ingredients-area" cols="30" rows="12" placeholder="ex: 1 lb chicken"></textarea>
+      </label>
+    </div>
+    <input id="add-recipe" type="submit" value="Add Recipe">
+  </div>
+</form>
 
 <%- include ../partials/footer %> 
