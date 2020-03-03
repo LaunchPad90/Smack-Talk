@@ -1,0 +1,32 @@
+<%- include ../partials/header %>
+
+  <form action="/recipes" method="POST">
+    <label>Title:
+      <input type="text" name="title">
+    </label><br>
+    <label>Course: 
+      <select name="course">
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+        <option value="Snack">Snack</option>
+      </select>
+    </label><br>
+    <label>Servings:
+        <input type="text" name="servings">
+    </label><br>
+    <label>Prep Time:
+        <input type="text" name="prepTime">
+    </label><br>
+    <label>Cook Time:
+        <input type="text" name="cookTime">
+    </label><br>
+    </form>
+    <div id="instruction-field">Ingredients:
+        <input type="text" name="ingredients">
+    </div><br>
+    <div id="direction-field">Directions:
+      <input type="text" name="directions">
+    </div><br>
+
+<%- include ../partials/footer %> 
