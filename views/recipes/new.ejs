@@ -1,8 +1,8 @@
 <%- include ../partials/header %>
 <form action="/recipes" method="POST">
 
-  <div id="recipe-container">
-    <div id="left">
+  <div class="recipe-container">
+    <div class="left">
       <label>Course:
         <select name="course">
           <option value="Breakfast">Breakfast</option>
@@ -28,20 +28,20 @@
       </label>
     </div>
 
-    <div id="middle">
+    <div class="middle">
       <div>
         <label>Directions:
-          <textarea name="directions" id="directions-area" cols="30" rows="13" placeholder="ex: 1. Bring water to a boil"></textarea>
+          <textarea name="directions" class="directions-area" cols="30" rows="13" placeholder="ex: 1. Bring water to a boil"></textarea>
         </label>
       </div>
     </div>
 
-    <div id="right">
+    <div class="right">
       <label>Ingredients:
-        <textarea name="ingredients" id="ingredients-area" cols="30" rows="13" placeholder="ex: 1 lb chicken"></textarea>
+        <textarea name="ingredients" class="ingredients-area" cols="30" rows="13" placeholder="ex: 1 lb chicken"></textarea>
       </label>
     </div>
-    <input id="add-recipe" type="submit" value="Add Recipe">
+    <input class="add-recipe" type="submit" value="Add Recipe">
   </div>
 </form>
 

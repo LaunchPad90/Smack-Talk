@@ -1,0 +1,50 @@
+<%- include ../partials/header %>
+<form action="/recipes/<%= recipe.id %>?_method=PUT" method="POST">
+
+    <div class="image-div"><img class="image-container" src="<%= recipe.image %>" alt=""> </div>
+
+    <div class="recipe-container">
+        <div class="left">
+        <label>Course:<%= recipe.course %><br>
+            <select name="course">
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Snack">Snack</option>
+            </select>
+        </label>
+        <label>Image Address:<br>
+            <input type="text" name="image" value="<%= recipe.image %>">
+        </label>
+        <label>Title:<br>
+            <input type="text" name="title" value="<%= recipe.title %>">
+        </label>
+        <label>Servings:<br>
+            <input type="text" name="servings" value="<%= recipe.servings %>">
+        </label>
+        <label>Prep Time(mins):<br>
+            <input type="text" name="prepTime" value="<%= recipe.prepTime %>">
+        </label>
+        <label>Cook Time(mins):<br>
+            <input type="text" name="cookTime" value="<%= recipe.cookTime %>">
+        </label>
+        </div>
+
+        <div class="middle">
+        <div>
+            <label>Directions:
+            <textarea name="directions" class="directions-area" cols="30" rows="13" placeholder="ex: 1. Bring water to a boil"><%= recipe.directions %></textarea>
+            </label>
+        </div>
+        </div>
+
+        <div class="right">
+        <label>Ingredients:
+            <textarea name="ingredients" class="ingredients-area" cols="30" rows="13" placeholder="ex: 1 lb chicken"><%= recipe.ingredients %></textarea>
+        </label>
+        </div>
+        <input class="add-recipe" type="submit" value="Add Recipe">
+    </div>
+</form>
+
+<%- include ../partials/footer %> 

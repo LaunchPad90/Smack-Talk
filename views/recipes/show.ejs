@@ -1,18 +1,31 @@
 <%- include ../partials/header %> 
-<img id="show-img" src="<%= recipe.image %>" alt="">
-<section id="recipe-container">
-    <div><%= recipe.course %></div>
-    <div><%= recipe.servings %> servings</div>
-    <div>Prep Time: </div>
-    <div><%= recipe.prepTime %> minutes</div>
-    <div>Cook Time: </div>
-    <div><%= recipe.cookTime %> minutes</div>
-    <div>Ingredients: </div>
-    <div><%= recipe.ingredients %></div>
-    <div>Directions: </div>
-    <div><%= recipe.directions %></div>
-  </section>
-  <form action="/recipes/:id/edit">
+<img class="show-img" src="<%= recipe.image %>" alt="">
+
+<section class="recipe-container">
+    <div class="recipe-container">
+    <div class="left">
+      <label>Course:<%= recipe.course %><br>
+        <select name="course">
+          <option value="Breakfast">Breakfast</option>
+          <option value="Lunch">Lunch</option>
+          <option value="Dinner">Dinner</option>
+          <option value="Snack">Snack</option>
+        </select>
+      </label>
+      <label>Title:<br>
+        <%= recipe.title %>
+      </label>
+      <label>Servings:<br>
+        <input type="text" name="servings" value="<%= recipe.servings %>">
+      </label>
+      <label>Prep Time(mins):<br>
+        <input type="text" name="prepTime" value="<%= recipe.prepTime %>">
+      </label>
+      <label>Cook Time(mins):<br>
+        <input type="text" name="cookTime" value="<%= recipe.cookTime %>">
+      </label>
+    </div>
+  <form action="/recipes/<%= recipe.id %>/edit">
     <button class="showbtn">Edit</button>
   </form>
   <form action="/recipes/<%= recipe.id %>">
