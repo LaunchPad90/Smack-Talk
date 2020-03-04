@@ -1,25 +1,18 @@
 <%- include ../partials/header %>
 
     <div class="cards">
-        <div class="card">
-            <img src="/images/card-img.jpeg" alt="spaghetti" class="card-image">
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rerum, corporis tenetur odio velit optio sint facilis fugit provident minus amet cupiditate fuga voluptate quas impedit quaerat, temporibus exercitationem vitae.</p>
+        <% recipes.forEach(function(r) { %>
+            <div class="card">
+                <img src="#" alt="">
+                <a href="/recipes/<%= r._id %>">
+                    <h3><%= r.title %></h3>
+                </a>
+                <div class="content">
+                    <h6><%= r.course %></h6>
+                    <p><%= r.ingredients %></p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="/images/card-img.jpeg" alt="spaghetti" class="card-image">
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rerum, corporis tenetur odio velit optio sint facilis fugit provident minus amet cupiditate fuga voluptate quas impedit quaerat, temporibus exercitationem vitae.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="/images/card-img.jpeg" alt="spaghetti" class="card-image">
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rerum, corporis tenetur odio velit optio sint facilis fugit provident minus amet cupiditate fuga voluptate quas impedit quaerat, temporibus exercitationem vitae.</p>
-            </div>
-        </div>
-        
+        <% }) %>  
     </div>
 
 <%- include ../partials/footer %> 

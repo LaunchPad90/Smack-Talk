@@ -5,8 +5,8 @@ const recipeSchema = new Schema({
     title: String,
     course: ['Breakfast', 'Lunch', 'Dinner', 'Snack'],
     servings: Number,
-    prepTime: [Number, ['minutes', 'hours']],
-    cookTime: [Number, ['minutes', 'hours']],
+    prepTime: Number,
+    cookTime: Number,
     ingredients: String,
     directions: String
 })

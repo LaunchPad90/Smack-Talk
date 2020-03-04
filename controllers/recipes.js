@@ -5,7 +5,8 @@ const User = require('../models/user');
 module.exports = {
     new: newRecipe,
     index,
-    create
+    create,
+    show
 }
 
 function newRecipe(req, res) {
@@ -13,20 +14,32 @@ function newRecipe(req, res) {
 }
 
 function index(req, res) {
-    res.render('recipes/index', {
-        title: 'Recipes',
-        user: req.user,
-        _id: req.user.googleId,
-    });
+    Recipe.find({}, function(err, recipes) {
+        res.render('recipes/index', {
+            title: 'Recipes',
+            id: req.user.id,
+            recipes
+        });
+    })
 }
 
 function create(req, res) {
     const recipe = new Recipe(req.body);
-    console.log('create: ', req.body);
-    console.log('create123][][', req.user);
     recipe.user = req.user;
     recipe.save(function(err) {
         if (err) return res.render('recipes/new', {title: 'Add Recipe'});
         res.redirect('/recipes/all');
     });
+}
+
+function show(req, res) {
+    Recipe.findById(req.params.id, function(err, recipe) {
+        console.log('INDEX{}{}{}', req.params.id);
+        res.render('recipes/show', {
+            title: 'Edit',
+            id: req.params.id,
+            recipe
+        });
+    })
+    
 }
