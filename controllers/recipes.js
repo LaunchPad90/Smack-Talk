@@ -36,7 +36,7 @@ function show(req, res) {
     Recipe.findById(req.params.id, function(err, recipe) {
         console.log('INDEX{}{}{}', req.params.id);
         res.render('recipes/show', {
-            title: 'Edit',
+            title: `${recipe.title}`,
             id: req.params.id,
             recipe
         });
