@@ -3,7 +3,7 @@
     <div class="cards">
         <% recipes.forEach(function(r) { %>
             <div class="card">
-                <img src="#" alt="">
+                <img class="card-image" src="<%= r.image %>" alt="user image">              
                 <a href="/recipes/<%= r._id %>">
                     <h3><%= r.title %></h3>
                 </a>

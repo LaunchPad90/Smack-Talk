@@ -8,7 +8,8 @@ const recipeSchema = new Schema({
     prepTime: Number,
     cookTime: Number,
     ingredients: String,
-    directions: String
+    directions: String,
+    image: String
 })
 
 
