@@ -39,4 +39,15 @@
     </form>
   </div>
 
+    <form action="/recipes/<%= recipe.id %>/comments" method="POST"> 
+      <div class="comments-container">
+        <textarea name="comments" cols="40" rows="5" placeholder="Tell me what you thought!"><%= recipe.comments %></textarea>
+        <div class="comment-submit">
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+      
+    </form>
+  
+
 <%- include ../partials/footer %> 

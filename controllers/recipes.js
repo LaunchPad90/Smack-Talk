@@ -17,6 +17,7 @@ function newRecipe(req, res) {
 }
 
 function index(req, res) {
+    console.log('INDEX{}{}{}', req.user.id)
     Recipe.find({}, function(err, recipes) {
         res.render('recipes/index', {
             title: 'Recipes',
@@ -59,12 +60,13 @@ function userIndex(req, res) {
 
 function edit(req, res) {
     Recipe.findById(req.params.id, function(err, recipe) {
+        if (!recipe.user.equals(req.user.id)) return res.redirect('/recipes/all')
         res.render('recipes/edit', {title: 'Edit Recipe', recipe});
     })
 }
 
 function update(req, res) {
     Recipe.findByIdAndUpdate(req.params.id, req.body, function(err, recipe) {
-        res.redirect(`/recipes/${recipe.id}`);
+        res.redirect(`/recipes`);
     })
 }
