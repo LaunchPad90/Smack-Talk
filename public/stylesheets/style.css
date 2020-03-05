@@ -1,5 +1,7 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1557219278-3577a762a85f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  background-size: cover;
+  font: 23px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -10,17 +12,23 @@ h1 {
   text-align: center;
 }
 
+label {
+  font-size: 25px;
+}
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 3em;
   margin: 0 auto;
+  margin-bottom: 5vh;
   max-width: 1000px;
+  overflow: hidden;
 }
 
 .card {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  height: 60vh;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  height: auto;
   text-align: center;
 }
 
@@ -55,7 +63,6 @@ p {
   width: 100%;
   text-align: left;
   padding: 10px;
-  align-items: center;
 }
 
 h1 {
@@ -88,4 +95,13 @@ h1 {
 .image-div {
   display: flex;
   justify-content: center;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(78, 153, 240);
+  color: white;
+  text-align: center;
 }

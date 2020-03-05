@@ -7,7 +7,7 @@ const recipeSchema = new Schema({
         type: String,
         required: true
     },
-    course: ['Breakfast', 'Lunch', 'Dinner', 'Snack'],
+    course: String,
     servings: Number,
     prepTime: Number,
     cookTime: Number,

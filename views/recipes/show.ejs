@@ -1,51 +1,42 @@
 <%- include ../partials/header %> 
-  <div class="image-div"><img class="show-img" src="<%= recipe.image %>" alt=""></div>
 
-    <div class="recipe-container">
-      <div class="left">
-        <label>Course:<%= recipe.course %><br>
-          <select name="course">
-            <option value="Breakfast">Breakfast</option>
-            <option value="Lunch">Lunch</option>
-            <option value="Dinner">Dinner</option>
-            <option value="Snack">Snack</option>
-          </select>
-        </label>
-        <label>Title:<br>
-          <%= recipe.title %>
-        </label>
-        <label>Servings:<br>
-          <%= recipe.servings %>
-        </label>
-        <label>Prep Time(mins):<br>
-          <%= recipe.prepTime %>
-        </label>
-        <label>Cook Time(mins):<br>
-          <%= recipe.cookTime %>
-        </label>
-      </div>
-      <div class="middle">
-        <div>
-          <label>Directions:<br>
-            <%= recipe.directions %> 
-          </label>
+      <div class="cards">
+        <div class="card">
+          <% if (recipe.image) { %>
+            <img class="card-image" src="<%= recipe.image %>" alt="">
+          <% } %>
+          <div class="content">             
+            <label>Course:</label><br>
+              <%= recipe.course %><br>
+            <label>Title:</label><br>
+              <%= recipe.title %><br>
+            <label>Servings:</label><br>
+              <%= recipe.servings %><br>
+            <label>Prep Time(mins):</label><br>
+              <%= recipe.prepTime %><br>
+            <label>Cook Time(mins):</label><br>
+              <%= recipe.cookTime %><br>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <label>Directions:</label><br>
+              <%= recipe.directions %>
+          </div>
+        </div>
+        <div class="card">
+          <label>Ingredients:</label>
+          <%= recipe.ingredients %>
         </div>
       </div>
-  
-      <div class="right">
-        <label>Ingredients:<br>
-          <%= recipe.ingredients %>
-        </label>
-      </div>
-      <input class="add-recipe" type="submit" value="Add Recipe">
-    </div>
 
-
-  <form action="/recipes/<%= recipe.id %>/edit">
-    <button class="showbtn">Edit</button>
-  </form>
-  <form action="/recipes/<%= recipe.id %>">
-    <button class="showbtn">Delete</button>
-  </form>
+  <div class="image-div">
+    <form action="/recipes/<%= recipe.id %>/edit">
+      <button class="showbtn">Edit</button>
+    </form>
+    <form action="/recipes/<%= recipe.id %>">
+      <button class="showbtn">Delete</button>
+    </form>
+  </div>
 
 <%- include ../partials/footer %> 

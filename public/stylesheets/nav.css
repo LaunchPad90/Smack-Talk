@@ -1,5 +1,5 @@
 #topnav {
-    background-color: #f8f9fa;
+    background-color: rgb(78, 153, 240);
     padding: 10px;
     font-size: 1.3rem;
     display: grid;
@@ -7,8 +7,8 @@
 }
 
 .dropbtn {
-    background-color: #f8f9fa;
-    color: black;
+    background-color: rgb(78, 153, 240);
+    color: white;
     border: none;
     cursor: pointer;
 }
