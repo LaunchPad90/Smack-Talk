@@ -6,13 +6,13 @@ module.exports = [
 ]
 
 function create(req, res) {
-    console.log('create from comments', recipe.id)
-    Recipe.findById(req.params.id, function(err,recipe) {
-        req.body.user = req.user.id;
-        req.body.name = req.user.name;
-        Recipe.comments.push(req.body);
-        Recipe.save(function(err) {
-            res.redirect(`/recipes/${recipe.id}`)
+    Recipe.findById(req.params.id, function(err, recipe) {
+        console.log(recipe);
+        console.log(req.body);
+        // Add the comment
+        recipe.comments.push(req.body);
+        recipe.save(function(err) {
+        res.redirect(`/recipes/${recipe.id}`);
         });
     });
 }

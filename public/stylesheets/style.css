@@ -108,6 +108,11 @@ h1 {
   margin: 25px 0;
 }
 
+.comment-div {
+  display: grid;
+  
+}
+
 .footer {
   position: absolute;
   bottom: 0;

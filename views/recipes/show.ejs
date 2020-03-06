@@ -41,13 +41,16 @@
 
     <form action="/recipes/<%= recipe.id %>/comments" method="POST"> 
       <div class="comments-container">
-        <textarea name="comments" cols="40" rows="5" placeholder="Tell me what you thought!"><%= recipe.comments %></textarea>
+        <textarea name="content" cols="40" rows="5" placeholder="Tell me what you thought!"></textarea>
         <div class="comment-submit">
           <button type="submit">Submit</button>
         </div>
       </div>
       
     </form>
-  
+    
+    <% recipe.comments.forEach(function(comment) { %>
+      <div class="comments-div"><%= comment.content %></div>
+    <% }) %>
 
 <%- include ../partials/footer %> 
