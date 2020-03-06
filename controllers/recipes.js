@@ -9,7 +9,8 @@ module.exports = {
     show,
     userIndex,
     edit,
-    update
+    update,
+    delete: deleteRecipe
 }
 
 function newRecipe(req, res) {
@@ -68,5 +69,12 @@ function edit(req, res) {
 function update(req, res) {
     Recipe.findByIdAndUpdate(req.params.id, req.body, function(err, recipe) {
         res.redirect(`/recipes`);
+    })
+}
+
+function deleteRecipe(req, res) {
+    console.log('DELTET PLESELSDKSJFLKDJF')
+    Recipe.findByIdAndRemove(req.params.id, function(err, recipe){
+        res.redirect('/recipes/all')
     })
 }

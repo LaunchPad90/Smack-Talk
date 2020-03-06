@@ -34,7 +34,7 @@
     <form action="/recipes/<%= recipe.id %>/edit">
       <button class="showbtn">Edit</button>
     </form>
-    <form action="/recipes/<%= recipe.id %>">
+    <form action="/recipes/<%= recipe.id %>?_method=DELETE" method="POST">
       <button class="showbtn">Delete</button>
     </form>
   </div>
