@@ -18,6 +18,7 @@ function newRecipe(req, res) {
 }
 
 function index(req, res) {
+    console.log(req.user);
     Recipe.find({}, function(err, recipes) {
         res.render('recipes/index', {
             title: 'Recipes',
