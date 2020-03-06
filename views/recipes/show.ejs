@@ -3,30 +3,28 @@
       <div class="cards">
         <div class="card">
           <% if (recipe.image) { %>
-            <img class="card-image" src="<%= recipe.image %>" alt="">
+            <img class="card-image" name="image" src="<%= recipe.image %>" alt="">
           <% } %>
-          <div class="content">             
-            <label>Course:</label><br>
-              <%= recipe.course %><br>
-            <label>Title:</label><br>
-              <%= recipe.title %><br>
-            <label>Servings:</label><br>
-              <%= recipe.servings %><br>
-            <label>Prep Time(mins):</label><br>
-              <%= recipe.prepTime %><br>
-            <label>Cook Time(mins):</label><br>
-              <%= recipe.cookTime %><br>
+          <div class="content">
+            <div class="card-title"><%= recipe.title %><br></div>
+            <%= recipe.course %><br>
+            <label for="servings">Servings:</label>
+            <%= recipe.servings %><br>
+          <label>Prep Time(mins):</label><br>
+            <%= recipe.prepTime %><br>
+          <label>Cook Time(mins):</label><br>
+            <%= recipe.cookTime %><br>
           </div>
         </div>
         <div class="card">
           <div>
             <label>Directions:</label><br>
-              <%= recipe.directions %>
+              <div class="content"><%= recipe.directions %></div>
           </div>
         </div>
         <div class="card">
           <label>Ingredients:</label>
-          <%= recipe.ingredients %>
+          <div class="content"><%= recipe.ingredients %></div>
         </div>
       </div>
 

@@ -1,16 +1,12 @@
 <%- include ../partials/header %>
 
     <div class="cards">
-        <% recipes.forEach(function(r) { %>
+        <% recipes.forEach(function(r) { %> 
             <div class="card">
-                <img class="card-image" src="<%= r.image %>" alt="user image">              
                 <a href="/recipes/<%= r._id %>">
+                <img class="card-image" src="<%= r.image %>" alt="user image">
                     <h3><%= r.title %></h3>
                 </a>
-                <div class="content">
-                    <h6><%= r.course %></h6>
-                    <p><%= r.ingredients %></p>
-                </div>
             </div>
         <% }) %>  
     </div>

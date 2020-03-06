@@ -1,0 +1,16 @@
+<button class="dropbtn">Explore</button>
+      <div class="dropdown-content">
+        <% if (user) { %>
+          <a href="/logout">Logout</a>
+        <% } else { %>
+        <a href="/auth/google">Sign In</a>
+        <% } %>
+        <a href="/recipes/all">All Recipes</a>
+        <a href="/recipes/new">Add Recipe</a>
+        <a href="/recipes/user/index">
+          <% if (user) { %>
+            <%= user.name %></a>
+          <% } else { %>
+             Home</a>
+          <% } %>
+      </div>

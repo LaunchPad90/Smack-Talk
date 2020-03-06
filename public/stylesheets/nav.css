@@ -1,9 +1,15 @@
-#topnav {
+.topnav {
     background-color: rgb(78, 153, 240);
     padding: 10px;
     font-size: 1.3rem;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .dropbtn {
@@ -42,12 +48,3 @@
     display: block;
 }
 
-#search {
-    background-color: #f8f9fa;
-    border: 1px solid gray;
-    justify-self: right;
-}
-
-#home {
-    justify-self: right;
-}

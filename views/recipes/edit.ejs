@@ -1,9 +1,7 @@
 <%- include ../partials/header %>
 <form action="/recipes/<%= recipe.id %>?_method=PUT" method="POST">
 
-    <% if (recipe.image) { %>
-        <div class="image-div"><img class="show-img" src="<%= recipe.image %>" alt=""></div>
-    <% } %>
+
 
     <div class="recipe-container">
         <div class="left">
