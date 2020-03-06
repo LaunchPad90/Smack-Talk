@@ -25,5 +25,4 @@ Add New Recipe:
 Edit Recipe:
 <a href="https://imgur.com/NkalZnq"><img src="https://i.imgur.com/NkalZnq.jpg" title="source: imgur.com" /></a>
 
-Lets get cookin'!
-<a href="https://thawing-wave-87870.herokuapp.com/">
+<a href="https://thawing-wave-87870.herokuapp.com/">Lets get cookin'!</a>
