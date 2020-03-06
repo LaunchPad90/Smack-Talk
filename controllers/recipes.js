@@ -74,7 +74,14 @@ function update(req, res) {
 
 function deleteRecipe(req, res) {
     console.log('DELTET PLESELSDKSJFLKDJF')
-    Recipe.findByIdAndRemove(req.params.id, function(err, recipe){
-        res.redirect('/recipes/all')
+    Recipe.findById(req.params.id, function(err, recipe){
+
+        if (!recipe.user.equals(req.user.id)) return res.redirect('/recipes/all')
+        
+        Recipe.findByIdAndRemove(req.params.id, function(err, recipe){
+            console.log('DLDLDLD', recipe.user)
+            console.log('LKDJFLKSFJ', req.user.id)
+            res.redirect('/recipes/all')
+        })
     })
 }
