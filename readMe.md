@@ -6,6 +6,8 @@
 Technologies used:
 HTML, CSS, Javascript, Express, node.js, Mongoose, MongoDB
 
+<a href="https://giphy.com/gifs/l0MYSCYtvpbUqmG8U/html5">Staying Positive is key!</a>
+
 Wireframe and flow:
 <a href="https://imgur.com/Cpv4k8D"><img src="https://i.imgur.com/Cpv4k8D.png" title="source: imgur.com" /></a>
 
