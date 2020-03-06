@@ -121,7 +121,7 @@ h1 {
 
 .comments-div {
   display: grid;
-  grid-template-columns: 1fr;
+  
   max-width: 500px;
   background-color: white;
   margin: 0 auto;

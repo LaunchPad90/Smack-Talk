@@ -4,7 +4,7 @@
 <p>Here at smack talk we're all about more smackin' and less talkin'. There's no BS at our site. We want to get you to the recipes you love without the websites you hate. Gone are the days of reading through some rando bloggers entire life story. Enough talk, LETS EAT!</p>
 
 Technologies used:
-HTML, CSS, Javascript, Express, node.js, Mongoose, MongoDB
+HTML, CSS, Javascript, Express, node.js, Mongoose, MongoDB, OAuth, passport
 
 <iframe src="https://giphy.com/embed/l0MYSCYtvpbUqmG8U" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/seeso-parks-and-recreation-mad-rec-l0MYSCYtvpbUqmG8U">via GIPHY</a></p>
 
