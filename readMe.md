@@ -6,7 +6,7 @@
 Technologies used:
 HTML, CSS, Javascript, Express, node.js, Mongoose, MongoDB
 
-<a href="https://giphy.com/gifs/l0MYSCYtvpbUqmG8U/html5">Staying Positive is key!</a>
+<iframe src="https://giphy.com/embed/l0MYSCYtvpbUqmG8U" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/seeso-parks-and-recreation-mad-rec-l0MYSCYtvpbUqmG8U">Staying Positive is key!</a></p>
 
 Wireframe and flow:
 <a href="https://imgur.com/Cpv4k8D"><img src="https://i.imgur.com/Cpv4k8D.png" title="source: imgur.com" /></a>
