@@ -18,7 +18,6 @@ function newRecipe(req, res) {
 }
 
 function index(req, res) {
-    console.log('INDEX{}{}{}', req.user.id)
     Recipe.find({}, function(err, recipes) {
         res.render('recipes/index', {
             title: 'Recipes',
@@ -39,7 +38,6 @@ function create(req, res) {
 
 function show(req, res) {
     Recipe.findById(req.params.id, function(err, recipe) {
-        console.log('INDEX{}{}{}', req.params.id);
         res.render('recipes/show', {
             title: `${recipe.title}`,
             id: req.params.id,
@@ -73,14 +71,11 @@ function update(req, res) {
 }
 
 function deleteRecipe(req, res) {
-    console.log('DELTET PLESELSDKSJFLKDJF')
     Recipe.findById(req.params.id, function(err, recipe){
 
         if (!recipe.user.equals(req.user.id)) return res.redirect('/recipes/all')
         
         Recipe.findByIdAndRemove(req.params.id, function(err, recipe){
-            console.log('DLDLDLD', recipe.user)
-            console.log('LKDJFLKSFJ', req.user.id)
             res.redirect('/recipes/all')
         })
     })

@@ -14,13 +14,16 @@ Here's a quick look into what I am currently looking to accomplish:
 <a href="https://trello.com/b/KeGymZbs/project-2">Trello</a><br>
 
 Landing Page:
-<a href="https://imgur.com/rJwymI6"><img src="https://i.imgur.com/rJwymI6.jpg?1" title="source: imgur.com" /></a>
+<a href="https://imgur.com/Rb93yCo"><img src="https://i.imgur.com/Rb93yCo.jpg" title="source: imgur.com" /></a>
 
 User Page:
-<a href="https://imgur.com/V9XYc0Z"><img src="https://i.imgur.com/V9XYc0Z.png?1" title="source: imgur.com" /></a>
+<a href="https://imgur.com/IAspJlJ"><img src="https://i.imgur.com/IAspJlJ.jpg" title="source: imgur.com" /></a>
 
 Add New Recipe:
-<a href="https://imgur.com/y9ve8MK"><img src="https://i.imgur.com/y9ve8MK.jpg?1" title="source: imgur.com" /></a>
+<a href="https://imgur.com/4cHOeQm"><img src="https://i.imgur.com/4cHOeQm.jpg" title="source: imgur.com" /></a>
 
 Edit Recipe:
-<a href="https://imgur.com/4M0eybc"><img src="https://i.imgur.com/4M0eybc.jpg?1" title="source: imgur.com" /></a>
+<a href="https://imgur.com/NkalZnq"><img src="https://i.imgur.com/NkalZnq.jpg" title="source: imgur.com" /></a>
+
+Lets get cookin'!
+<a href="https://thawing-wave-87870.herokuapp.com/">
