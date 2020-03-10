@@ -29,12 +29,14 @@
       </div>
 
   <div class="image-div">
+    <% if (user._id.equals(recipe.user)) { %>
     <form action="/recipes/<%= recipe.id %>/edit">
       <button class="showbtn">Edit</button>
     </form>
     <form action="/recipes/<%= recipe.id %>?_method=DELETE" method="POST">
       <button class="showbtn">Delete</button>
     </form>
+  <% } %> 
   </div>
 
     <form action="/recipes/<%= recipe.id %>/comments" method="POST"> 
