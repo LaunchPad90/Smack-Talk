@@ -4,7 +4,7 @@ body {
   min-height: 100vh;
   background: #fafafa;
   background-image: url('https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
-  background-size: cover;
+  background-size: contain;
 }
 
 
@@ -17,7 +17,6 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 3em;
   margin: 0 auto;
-
   padding: 20px;
   margin-bottom: 5vh;
   max-width: 1200px;
@@ -31,7 +30,6 @@ h1 {
   text-align: center;
   max-width: 400px;
 }
-
 div > a {
   color: black;
 }
@@ -59,6 +57,8 @@ p {
   line-height: 1.5;
   font-size: 1rem;
   padding: 15px;
+  text-align: left;
+  white-space: pre-wrap;
 }
 
 .recipe-container {
